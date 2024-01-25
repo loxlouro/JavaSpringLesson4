@@ -1,0 +1,12 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<div th:fragment="questionFragment">
+    <userFragment>
+        <div  th:fragment="userFragment(user)">
+
+            <a th:text="${user.id}">id</a>
+            <a th:text="${user.email}">email</a>
+            <a th:text="${user.password}">password</a>
+        </div>
+    </userFragment>
+</div>
